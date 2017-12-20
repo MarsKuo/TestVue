@@ -21,6 +21,7 @@ export default {
     //註冊組件
     ListView,headerview
   }
+
 }
 </script>
 
