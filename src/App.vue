@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <!-- <HelloWorld/> -->
+
+    <headerview> </headerview>
+      <img src="./assets/logo.png">
 
 
     <ListView />
@@ -11,12 +12,14 @@
 <script>
 // import HelloWorld from './components/HelloWorld'
 import ListView from  './components/list'
+import headerview from './components/header'
 
 export default {
   name: 'app',
   components: {
     // HelloWorld
-    ListView
+    //註冊組件
+    ListView,headerview
   }
 }
 </script>
@@ -29,5 +32,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
 }
 </style>
