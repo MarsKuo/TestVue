@@ -1,6 +1,6 @@
 <template>
   <div class="headerview">
-    <h1>{{title}}</h1>
+    <h1>{{msg}}</h1>
   </div>
 </template>
 <script>
@@ -13,7 +13,7 @@ export default {
   props:{
     msg:{
       type: String,
-      default: "我是誰"
+      default: "我是誰？"
     }
   }
 }

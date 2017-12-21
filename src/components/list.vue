@@ -40,12 +40,16 @@ export default {
     },
     addData: function() {
       console.clear();
-      console.log(this.newStr);
-      this.items.push( {
-          text: this.newStr,
-          isFinished: false
-        })
-        this.newStr='';
+     // console.log(this.newStr);
+      this.items.push({
+        text: this.newStr,
+        isFinished: false
+      });
+      //將輸入框中輸入  傳遞給 父組件 APP
+      //觸發myMsg事件，並且傳遞參數
+      this.$emit("myMsg", this.newStr);
+
+      this.newStr = "";
     }
   }
 };
